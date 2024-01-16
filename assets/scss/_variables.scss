@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #7448FF;
+    --secondary-color: #6742e2;
+    --font-color: #12194C;
+    --text-color: #535C84;
+    --bg-color: #F7F7F7;
+    --dark-color: #FFFFFF;
+    --gradient:  linear-gradient(180deg, rgba(103, 71, 229, 0.50) 0%, rgba(188, 177, 255, 0.50) 81.77%, rgba(247, 245, 255, 0.50) 100%), linear-gradient(180deg, rgba(103, 71, 229, 0.50) 0%, rgba(188, 177, 255, 0.50) 81.77%, rgba(247, 245, 255, 0.50) 100%);;
+}
+
+[data-theme="dark"] {
+    --primary-color: #7448FF;
+    --secondary-color: #6742e2;
+    --font-color: #FFFFFF;
+    --text-color: #DFE5FF;
+    --bg-color: #12194C;
+    --heading-color: #FFFFFF; 
+    --dark-color: #121742;
+    --gradient: linear-gradient(180deg, rgba(103, 71, 229, 0.80) 0%, rgba(35, 34, 106, 0.80) 69.79%, rgba(18, 25, 76, 0.80) 100%);
+  
+}

@@ -1,0 +1,27 @@
+//  usage:
+//  @include breakpoint(mobile) {
+//    margin: 20px;
+//  }
+
+$breakpoints: (
+  "mobile-portrait"     : "min-width: 320px",
+  "mobile"              : "min-width: 375px", 
+  "tablet"              : "min-width: 768px",
+  "desktop"             : "min-width: 1200px",
+  "note"             : "min-width: 1440px",
+) !default;
+
+// adapted snipped form Hugo Giraudel: http://www.sitepoint.com/cross-media-query-extend-sass/
+@mixin breakpoint($breakpoint) {
+
+  $value: map-get($breakpoints, $breakpoint);
+
+  @if $value != null {
+    @media (#{$value}) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Invalid breakpoint `#{$breakpoint}`.";
+  }
+}

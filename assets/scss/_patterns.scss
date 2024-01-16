@@ -1,0 +1,231 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input,
+button,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border: none;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  vertical-align: baseline;
+  font-smooth: antialiased;
+  transition: all 300ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: 0.2s;
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: 0.2s;
+  background-color: var(--secundary-color);
+}
+ 
+main {
+  display: flex;
+  flex-direction: column; 
+  gap: 12rem;
+}
+ 
+.container {
+  width: unquote("min(100% - 20px, 1400px)");
+  margin-inline: auto;
+  position: relative;
+}
+
+
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+.theme-switch { 
+  position: relative; 
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider { 
+  bottom: 0;
+  cursor: pointer; 
+  transition: .4s; 
+}
+
+.slider:before {  
+  content: ""; 
+
+  background: url('../img/sun.svg') no-repeat center;
+ 
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: contain; 
+  position: relative;
+}
+ 
+input:checked+.slider:before {
+  content: unset;
+}
+
+input:checked+.slider { 
+  background: url('../img/moon.svg') no-repeat center; 
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: contain;  
+  position: relative;
+} 

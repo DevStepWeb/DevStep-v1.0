@@ -1,0 +1,45 @@
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+
+    nav {
+        height: 105px; 
+        justify-content: space-between;
+        align-items: center; 
+        display: flex;
+        .left-menu {
+            display: flex;
+            align-items: center;
+            gap: 7rem;
+
+            ul {
+                display: none;
+                align-items: center;
+                gap: 2rem;
+
+                li {
+                    a {
+                     color: #ffffff;
+                        &:hover {
+                            color: #d2e0ec
+                        }
+                    }
+                }
+                
+            @include breakpoint(desktop) { 
+                display: flex;
+            }
+            }
+ 
+        }
+        .right-menu {
+                    display: none;
+            @include breakpoint(desktop) { 
+                display: flex;
+            }
+        }
+    }
+}

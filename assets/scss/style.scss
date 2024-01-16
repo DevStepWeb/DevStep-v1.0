@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syncopate:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import './variables';
+@import './patterns';
+@import './partials/mediaqueries';
+@import './partials/header';
+@import './partials/footer';
+@import './home';
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--font-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
